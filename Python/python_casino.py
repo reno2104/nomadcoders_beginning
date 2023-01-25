@@ -1,4 +1,4 @@
-***
+"""
 from random import randint
 
 print("Welcome to Python Casino!")
@@ -16,7 +16,7 @@ while playing:
           elif user_choice < pc_choice:
             print("Higher! ")
 
-***
+"""
 
 
 from random import randint
