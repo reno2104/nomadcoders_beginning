@@ -27,3 +27,6 @@ print(player)
 player['fav_food'].append("🍱")
 print(player.get('fav_food'))
 print(player['fav_food'])
+
+# ''나 "" 가능.
+# 값으로는 string, number, boolean, list 어떤 것이든 가능.
