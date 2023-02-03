@@ -12,6 +12,6 @@ if response.status_code != 200:
   print("Can`t request website")
 else:
   soup = BeautifulSoup(response.text, "html.parser")
-# job = soup.find_all("strong", class_="highlight")
-  print(response.text)
+  print(soup.find_all('a', class_="cp_name"))
+#  print(response.text)
 # .text : 웹사이트를 구성하고 있는 코드
