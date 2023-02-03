@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 # soup = BeautifulSoup(html_doc, "html.parser")
 # soup.find_all("")
 
-base_url ="https://www.work.go.kr/wnSearch/unifSrch.do?topQuery="
-search_topQuery="python"
+base_url ="https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?occupation=&notSrcKeyword=&_csrf=b1cc193a-2d14-4cc8-b434-bea01f1a582c&region=&srcKeyword="
+search_srcKeyword="python"
 
-response = get(f"{base_url}{search_topQuery}")
+response = get(f"{base_url}{search_srcKeyword}")
 if response.status_code != 200:
   print("Can`t request website")
 else:
   soup = BeautifulSoup(response.text, "html.parser")
- job = soup.find_all("strong", class_="highlight")
-   print(response.text)
+# job = soup.find_all("strong", class_="highlight")
+  print(response.text)
 # .text : 웹사이트를 구성하고 있는 코드
