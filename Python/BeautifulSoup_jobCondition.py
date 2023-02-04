@@ -33,3 +33,7 @@ else:
       print("/////////////")
     """
 """
+
+P.s.
+1. Last time, I searched only by company name, but this time I listed it by company name, condition, and salary.
+2. in the salary, There are a lot of empty spaces;;;
